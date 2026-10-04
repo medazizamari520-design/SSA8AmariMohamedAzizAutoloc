@@ -1,4 +1,4 @@
-package tn.esprit.entities;
+package tn.esprit.enumerations;
 
 public enum RoleEmploye {
     AGENT,

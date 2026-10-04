@@ -1,5 +1,6 @@
 package tn.esprit.entities;
 
+import tn.esprit.enumerations.ModePaiement;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
