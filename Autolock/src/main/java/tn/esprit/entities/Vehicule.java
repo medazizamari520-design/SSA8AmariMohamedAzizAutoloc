@@ -1,7 +1,7 @@
 package tn.esprit.entities;
 
-import tn.esprit.enumerations.CategorieVehicule;
-import tn.esprit.enumerations.StatutVehicule;
+import tn.esprit.entities.enumerations.CategorieVehicule;
+import tn.esprit.entities.enumerations.StatutVehicule;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

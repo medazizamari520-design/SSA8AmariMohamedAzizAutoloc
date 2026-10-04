@@ -1,6 +1,6 @@
 package tn.esprit.entities;
 
-import tn.esprit.enumerations.RoleEmploye;
+import tn.esprit.entities.enumerations.RoleEmploye;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
