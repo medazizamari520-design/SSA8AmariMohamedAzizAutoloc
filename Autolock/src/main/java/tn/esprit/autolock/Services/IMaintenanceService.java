@@ -13,4 +13,8 @@ public interface IMaintenanceService {
     void supprimerMaintenance(Long id);
 
     List<Maintenance> recupererMaintenances();
+
+    Maintenance affecterMaintenanceAVehicule(Long idMaintenance, Long idVehicule);
+
+    Maintenance desaffecterMaintenanceDeVehicule(Long idMaintenance);
 }

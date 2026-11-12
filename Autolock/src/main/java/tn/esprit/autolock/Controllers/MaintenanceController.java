@@ -34,4 +34,14 @@ public class MaintenanceController {
         return maintenanceService.recupererMaintenances();
     }
 
+    @PutMapping("/affecterMaintenanceAVehicule/{idMaintenance}/{idVehicule}")
+    public Maintenance affecterMaintenanceAVehicule(@PathVariable Long idMaintenance, @PathVariable Long idVehicule) {
+        return maintenanceService.affecterMaintenanceAVehicule(idMaintenance, idVehicule);
+    }
+
+    @PutMapping("/desaffecterMaintenanceDeVehicule/{idMaintenance}")
+    public Maintenance desaffecterMaintenanceDeVehicule(@PathVariable Long idMaintenance) {
+        return maintenanceService.desaffecterMaintenanceDeVehicule(idMaintenance);
+    }
+
 }

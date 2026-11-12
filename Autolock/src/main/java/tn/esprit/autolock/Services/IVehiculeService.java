@@ -13,4 +13,12 @@ public interface IVehiculeService {
     void supprimerVehicule(Long id);
 
     List<Vehicule> recupererVehicules();
+
+    Vehicule affecterVehiculeAAgence(Long idVehicule, Long idAgence);
+
+    Vehicule desaffecterVehiculeDeAgence(Long idVehicule);
+
+    Vehicule affecterEquipementAVehicule(Long idVehicule, Long idEquipement);
+
+    Vehicule desaffecterEquipementDeVehicule(Long idVehicule, Long idEquipement);
 }

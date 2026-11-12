@@ -34,4 +34,24 @@ public class VehiculeController {
         return vehiculeService.recupererVehicules();
     }
 
+    @PutMapping("/affecterVehiculeAAgence/{idVehicule}/{idAgence}")
+    public Vehicule affecterVehiculeAAgence(@PathVariable Long idVehicule, @PathVariable Long idAgence) {
+        return vehiculeService.affecterVehiculeAAgence(idVehicule, idAgence);
+    }
+
+    @PutMapping("/desaffecterVehiculeDeAgence/{idVehicule}")
+    public Vehicule desaffecterVehiculeDeAgence(@PathVariable Long idVehicule) {
+        return vehiculeService.desaffecterVehiculeDeAgence(idVehicule);
+    }
+
+    @PutMapping("/affecterEquipementAVehicule/{idVehicule}/{idEquipement}")
+    public Vehicule affecterEquipementAVehicule(@PathVariable Long idVehicule, @PathVariable Long idEquipement) {
+        return vehiculeService.affecterEquipementAVehicule(idVehicule, idEquipement);
+    }
+
+    @PutMapping("/desaffecterEquipementDeVehicule/{idVehicule}/{idEquipement}")
+    public Vehicule desaffecterEquipementDeVehicule(@PathVariable Long idVehicule, @PathVariable Long idEquipement) {
+        return vehiculeService.desaffecterEquipementDeVehicule(idVehicule, idEquipement);
+    }
+
 }
